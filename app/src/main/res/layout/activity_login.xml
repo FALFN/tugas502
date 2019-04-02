@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context=".View.LoginActivity"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="35sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="145sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="Username"
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_masuk"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/pass"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="40sp"
+        android:text="Sign In"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/pass"
+        android:layout_toRightOf="@id/btn_masuk"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="40sp"
+        android:text="Sign Up"
+        android:textSize="17sp" />
+
+</RelativeLayout>
